@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kaixin_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="7.0dip"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip"
+    android:paddingTop="8.0dip" >
+
+    <LinearLayout
+        android:id="@+id/concurrently_job_listitem_takeout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/concurrently_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="兼职名称："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/concurrently_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:includeFontPadding="false"
+                    android:text="招收服务员"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:orientation="horizontal" >
+                
+                <TextView
+                    android:id="@+id/concurrently_job_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="厦岛咖啡厅招收一名服务员，要求五官端正，热情周到，文明礼貌。要以鹏鹏的为标准，如有和王胖千分之一的神似，一概不收。"
+                    android:textColor="@color/gray"
+                    android:textSize="14dip" 
+                    android:lines="1"/>
+            </LinearLayout>
+
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/concurrently_job_person_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:includeFontPadding="false"
+                    android:text="人数不限"
+                    android:textColor="@color/gray" />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dip"
+                    android:src="@drawable/commentinputbg"
+                    />
+                <TextView
+                    android:id="@+id/concurrently_job_sex_require"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="男女不限"
+                    android:textColor="@color/gray" />
+
+               
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/concurrently_job_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="薪金："
+                    android:textColor="@color/gray" />
+                <TextView
+                    android:id="@+id/concurrently_job_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="3000元"
+                    android:textColor="@color/orange" 
+                    android:layout_toRightOf="@+id/concurrently_job_m"/>
+                <TextView
+                    android:id="@+id/concurrently_job_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="2013-8-10"
+                    android:textColor="@color/gray" 
+                    android:layout_alignParentRight="true" />
+
+               
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/concurrently_job_phonetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话: "
+                    android:textColor="@color/listitem_gray"
+                    android:textSize="14dip" />
+
+                <TextView
+                    android:id="@+id/concurrently_job_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/concurrently_job_phonetitle"
+                    android:text="15068344657"
+                    android:textColor="@color/listitem_gray"
+                    android:textSize="14dip" />
+
+                <ImageView
+                    android:id="@+id/concurrently_job_listitem_takeout_phoneico"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/mem_call" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

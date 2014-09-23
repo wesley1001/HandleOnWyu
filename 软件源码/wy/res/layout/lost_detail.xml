@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lost_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxWidth="150dip"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:text="失物详情"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lost_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lost_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="失物：title"
+            android:padding="8dip"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lost_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="时间：time"
+            android:padding="8dip"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/lost_place"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="地点：place"
+            android:padding="8dip"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/lost_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="  QQ：qq"
+            android:padding="8dip"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#80333333" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/lost_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="8dip"
+            android:text="content"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#80333333" />
+
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kaixin_background"
+                android:orientation="horizontal"
+                android:paddingBottom="6.0dip"
+                android:paddingLeft="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45.0dip"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lost_contract_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3.0dip"
+                            android:layout_marginLeft="2.0dip"
+                            android:text="趙子龍"
+                            android:textColor="@color/black"
+                            android:textSize="14dip" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/lost_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="15068344657"
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/lost_lphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+
+                        <ImageButton
+                            android:id="@+id/lost_imgphone"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:clickable="true"
+                            android:src="@drawable/two_call1" />
+
+                        <TextView
+                            android:id="@+id/lost_phonetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:text="电话"
+                            android:textColor="@color/black"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lost_lsphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lost_lmes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+
+                        <ImageView
+                            android:id="@+id/lost_imgmes"
+                            android:layout_width="25.0dip"
+                            android:layout_height="20.0dip"
+                            android:clickable="true"
+                            android:paddingLeft="5.0dip"
+                            android:src="@drawable/two_mes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:text="短信"
+                            android:textColor="@color/black"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+</LinearLayout>

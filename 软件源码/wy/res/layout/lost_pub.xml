@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/awhile"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lost_pub_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxWidth="150dip"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:text="发布物件"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lost_pub_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="2.0dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/two_pup_imgs"
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip" >
+
+                <ImageView
+                    android:id="@+id/two_pup_img1"
+                    android:layout_width="60.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/two_pup_img2"
+                    android:layout_width="60.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_toRightOf="@+id/two_pup_img1"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/two_pup_img3"
+                    android:layout_width="60.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:layout_toRightOf="@+id/two_pup_img2"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/two_pup_zrorqg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:background="@drawable/about_top_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/two_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/two_pup_pick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="80.0dip"
+                        android:checked="true"
+                        android:text="我捡到东西了"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/two_pup_lost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我丢东西了"
+                        android:textColor="@color/black"
+                        android:textSize="12.0sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/lost_pub_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物    　件："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:hint="你丢失(捡到)的物件"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+                <TextView
+                    android:id="@+id/lost_pub_path_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写地点："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_path"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="你是哪里丢失(捡到)的呢？"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+                <TextView
+                    android:id="@+id/lost_pub_losttime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="填写时间："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_losttime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="你是什么时候丢失(捡到)的呢？"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人　："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_linkman"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="少侠留下姓名！"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手   　机 ："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="填写一下你的联系方式吧！"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q   　   Q ："
+                    android:textColor="@color/black"
+                    android:textSize="12.0sp" />
+
+                <EditText
+                    android:id="@+id/lost_pub_qq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="填写qq"
+                    android:singleLine="true"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:text="补充说明："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/lost_pub_content"
+                android:layout_width="fill_parent"
+                android:layout_height="200.0dip"
+                android:gravity="top"
+                android:hint="少侠还有什么想补充的，请肆意挥洒。"
+                android:lines="5"
+                android:textSize="12.0sp" />
+
+            <Button
+                android:id="@+id/lost_pub_sub_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/login_btn"
+                android:enabled="true"
+                android:shadowColor="#7f000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

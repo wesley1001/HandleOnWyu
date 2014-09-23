@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kaixin_list_item_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="7.0dip"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip"
+    android:paddingTop="8.0dip" >
+
+    <LinearLayout
+        android:id="@+id/service_listitem_takeout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lost_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="物件："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lost_property_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:includeFontPadding="false"
+                    android:text="一张银行卡"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:orientation="horizontal" >
+                
+                <TextView
+                    android:id="@+id/lost_property_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="昨晚在小吃店门口捡到一张银行卡，卡号为：622821 2022013320311。望失主尽快联系本人."
+                    android:textColor="@color/gray"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="3.0dip"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="时间:"
+                    android:textColor="@color/gray" 
+                    android:layout_toLeftOf="@+id/lost_property_time"/>                <TextView
+                    android:id="@+id/lost_property_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="10:00-21:00"
+                    android:textColor="@color/gray" 
+                    android:layout_alignParentRight="true" />
+
+               
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lost_property_phonetitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话: "
+                    android:textColor="@color/listitem_gray"
+                    android:textSize="14dip" />
+
+                <TextView
+                    android:id="@+id/lost_property_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lost_property_phonetitle"
+                    android:text="15068344657"
+                    android:textColor="@color/listitem_gray"
+                    android:textSize="14dip" />
+
+                <ImageView
+                    android:id="@+id/service_listitem_takeout_phoneico"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/mem_call" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service_listitem_work"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/service_listitem_work_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:includeFontPadding="false"
+            android:text="(嘉兴)微博英语推广专业"
+            android:textColor="@color/black"
+            android:textSize="13dip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/service_listitem_work_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="若干"
+                android:textColor="@color/gray"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/service_listitem_work_numI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_toRightOf="@+id/service_listitem_work_num"
+                android:text="|"
+                android:textColor="@color/gray"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/service_listitem_work_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/service_listitem_work_numI"
+                android:text="性别不限"
+                android:textColor="@color/gray"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/service_listitem_work_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8.0dip"
+                android:text="100元/天"
+                android:textColor="@color/orange"
+                android:textSize="10.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/service_listitem_work_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="嘉兴市微博培训学校"
+                android:textColor="@color/gray"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/service_listitem_work_pubtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8.0dip"
+                android:text="09-01"
+                android:textColor="@color/gray"
+                android:textSize="10.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

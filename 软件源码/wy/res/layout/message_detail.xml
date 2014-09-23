@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/awhile"
+    android:orientation="vertical" >
+
+    <ViewSwitcher
+        android:id="@+id/concurrent_detail_viewswitcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ScrollView
+            android:id="@+id/concurrent_detail_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:fadingEdge="none"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_imgs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/concurrent_detail_img1"
+                        android:layout_width="75.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_margin="5.0dip"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/concurrent_detail_img2"
+                        android:layout_width="75.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_margin="5.0dip"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/concurrent_detail_img3"
+                        android:layout_width="75.0dip"
+                        android:layout_height="50.0dip"
+                        android:layout_margin="5.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/global_top_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bar_center_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lost_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:maxWidth="150dip"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:text="兼职招聘"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lost_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/title_text_button_left_arrow"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:text="兼职名称: "
+                    android:textColor="@color/gray"
+                    android:textSize="14dip" />
+                <TextView
+                    android:id="@+id/concurrent_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:text="厨师"
+                    android:textColor="@color/black"
+                    android:textSize="14dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="?android:listDivider" />
+
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_work_lmoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_moneytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:text="薪资水平: "
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="100元/天 "
+                        android:textColor="@color/orange"
+                        android:textSize="14dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_work_lnum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_numtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:text="招聘人数: "
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_Limit_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="若干"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_work_lgender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_gendertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:text="性别要求: "
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_limitsex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="不限"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_work_ltime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_timetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:text="工作时间: "
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="不限"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/concurrent_detail_work_lpath"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_pathtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="8.0dip"
+                        android:text="工作地点: "
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_work_path"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="嘉兴学院"
+                        android:textColor="@color/black"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:background="?android:listDivider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_marginRight="6.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:orientation="vertical" >
+
+                    
+
+                    
+                </LinearLayout>
+
+               
+
+                <TextView
+                    android:id="@+id/concurrent_detail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:paddingLeft="2.0dip"
+                    android:paddingTop="8.0dip"
+                    android:text="content"
+                    android:textColor="@color/black"
+                    android:textSize="13dip" />
+            </LinearLayout>
+        </ScrollView>
+    </ViewSwitcher>
+
+    <LinearLayout
+        android:id="@+id/mop_detail_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ViewSwitcher
+            android:id="@+id/concurrent_detail_foot_viewswitcher"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kaixin_background"
+                android:orientation="horizontal"
+                android:paddingBottom="6.0dip"
+                android:paddingLeft="6.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45.0dip"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/concurrent_detail_contractPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3.0dip"
+                            android:layout_marginLeft="2.0dip"
+                            android:text="趙子龍"
+                            android:textColor="@color/black"
+                            android:textSize="14dip" />
+
+                        <TextView
+                            android:id="@+id/concurrent_detail_sphone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:text="674657"
+                            android:textColor="@color/gray"
+                            android:textSize="10dip" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/concurrent_detail_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:text="15068344657"
+                        android:textColor="@color/gray"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/concurrent_detail_lphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+
+                        <ImageButton
+                            android:id="@+id/concurrent_detail_imgphone"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:clickable="true"
+                            android:src="@drawable/two_call1" />
+
+                        <TextView
+                            android:id="@+id/concurrent_detail_phonetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:text="电话"
+                            android:textColor="@color/black"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/concurrent_detail_lsphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/concurrent_detail_lmes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20.0dip"
+                        android:orientation="vertical"
+                        android:paddingTop="8.0dip" >
+
+                        
+					                            <ImageView
+					                            android:id="@+id/concurrent_detail_imgmes"
+					                            android:layout_width="25.0dip"
+					                            android:layout_height="20.0dip"
+					                            android:clickable="true"
+					                            android:paddingLeft="5.0dip"
+					                            android:src="@drawable/two_mes" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:text="短信"
+                            android:textColor="@color/black"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ViewSwitcher>
+    </LinearLayout>
+
+</LinearLayout>

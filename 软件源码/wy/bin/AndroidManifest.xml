@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="com.zhangshangwuyuan.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application
+        android:icon="@drawable/icon_apps"
+        android:label="掌上武院"
+        android:name="com.wuyuan.android.KXApplication"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.wuyuan.android.activity.StartActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wuyuan.android.activity.LoginActivity" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.MainActivity"
+            android:screenOrientation="portrait" > 
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.BookDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ChangeWallpagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.EditSignatureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ContactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.LibSearchResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoAvatarDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoPictureDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoCommentDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.Welcome_Guide"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoReplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.DiaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.DiaryDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.wuyuan.android.activity.ForumListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.LostDetailContent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.LostPubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.WorkPubActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ConcurrentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.wuyuan.android.activity.WriteDiaryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.FriendsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.wuyuan.android.activity.VisitorsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.FriendInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ChatLogsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.SendGiftActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.SelectGiftActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.SelectFriendsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.VoiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.DeletePhotoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhoneAlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.AlbumActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ImageFilterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ImageFilterCropActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ImageFilterEffectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ImageFilterFrameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ImageFilterFaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.PhotoShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.WriteRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.CheckInActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.wuyuan.android.activity.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.SetUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.ExportActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.UploadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.FeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wuyuan.android.activity.SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+    </application>
+
+</manifest>
